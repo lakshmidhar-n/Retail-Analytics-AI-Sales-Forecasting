@@ -1,0 +1,67 @@
+/* Retail Intelligence — executive dark theme */
+:root {
+    --bg: #0b1120;
+    --panel: #111b2e;
+    --panel-hover: #17243a;
+    --border: #26354b;
+    --text: #f1f5f9;
+    --muted: #94a3b8;
+    --cyan: #22d3ee;
+    --purple: #a78bfa;
+    --amber: #fbbf24;
+    --green: #34d399;
+}
+.stApp {
+    background:
+        radial-gradient(ellipse at 80% 0%, rgba(37, 99, 235, 0.10), transparent 38%),
+        var(--bg);
+    color: var(--text);
+}
+[data-testid="stHeader"] { background: rgba(11, 17, 32, 0.94); }
+[data-testid="stSidebar"] {
+    background: #0e1728;
+    border-right: 1px solid var(--border);
+}
+[data-testid="stSidebar"] * { color: var(--text); }
+h1, h2, h3 { color: var(--text); letter-spacing: -0.025em; }
+p, label, .stCaption { color: var(--muted); }
+div[data-testid="stMetric"] {
+    background: linear-gradient(145deg, #172844, #101a2c);
+    border: 1px solid #2a3b55;
+    border-radius: 14px;
+    padding: 17px 18px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+    min-height: 104px;
+}
+div[data-testid="stMetricLabel"] { color: var(--muted); }
+div[data-testid="stMetricValue"] {
+    color: var(--cyan);
+    font-weight: 750;
+    font-size: clamp(1.15rem, 1.6vw, 1.8rem);
+}
+div[data-testid="stMetricDelta"] { color: var(--green); }
+div[data-testid="stVerticalBlockBorderWrapper"] {
+    border-color: var(--border);
+    border-radius: 14px;
+}
+.stButton > button, .stDownloadButton > button {
+    border-radius: 9px;
+    border: 1px solid #334155;
+    transition: all 0.2s ease;
+}
+.stButton > button:hover, .stDownloadButton > button:hover {
+    border-color: var(--cyan);
+    color: var(--cyan);
+}
+div[data-testid="stDataFrame"] {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+}
+[data-testid="stFileUploader"] {
+    background: rgba(17, 27, 46, 0.55);
+    border-radius: 12px;
+}
+hr { border-color: var(--border); }
+#MainMenu { visibility: hidden; }
+footer { visibility: hidden; }
